@@ -1,0 +1,36 @@
+// Initialize Number Variables
+    Initialize myInteger as 6 (Amount of Arizona Iced Teas in a six-pack)
+    Initialize myFloat as 0.99 (Cost of an Arizona Iced Tea)
+    Initialize myDouble as 2.98 (Cost of a gallon jug of Arizona Iced Tea)
+
+// Initialize Calculation Variables
+    Initialize mySum as a float without a value
+    Initialize myDifference as a float without a value
+    Initialize myProduct as a float without a value
+    Initialize myQuotient as a float without a value
+
+// Initialize Edge Case Variables
+    Initialize isFloatZero as a boolean set to false
+
+// Check for Edge Cases
+    If myFloat is equal to zero, 
+    set isFloatZero to true
+
+// Calculate Results
+    mySum equals myInteger plus myFloat
+    myDifference equals myInteger minus myFloat
+    myProduct equals myInteger times myFloat
+
+    // Only perform division operation if myFloat is not equal to zero
+        If isFloatZero is equal to true, 
+            then myQuotient equals myInteger divided by myFloat 
+
+// Display results
+    Print to console "Sum of myInteger and myFloat: " plus  mySum
+    Print to console "Difference of myInteger and myFloat: " plus myDifference
+    Print to console "Product of myInteger and myFloat: " plus myProduct
+
+    // Only print the result of the quotient if myFloat is not equal to zero.
+        If isFloatZero is equal to true, 
+            then print to console "Division of myInteger and myFloat: " plus myQuotient
+        Otherwise, print to console "myFloat is equal to zero, making it ineligible as a denominator"

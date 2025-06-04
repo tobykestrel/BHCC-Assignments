@@ -1,0 +1,54 @@
+Open "studentgrade.txt" for writing as studentData.
+If studentData did not open successfully:
+    Cout "Error opening studentgrade.txt".
+    Exit Program.
+Do-while loop to ensure repeatability of program.
+    Initialize int variables:
+        studentsAmount = 5.
+        inpIndex.
+        score.
+        totalScoresSum = 0.
+        lowestScore = 100.
+        highestScore = 0.
+        maxNameChars = 10.
+    Initialize string variables:
+        inpID.
+        lowestScoreName.
+        highestScoreName.
+        students[studentsAmount][3].
+    For i = 0; i < studentsAmount; i++:
+        Cout "What is the ID of student i?".
+        Repeat until valid ID input is entered:
+            Check if ID is valid (3 digits, numeric, unique).
+            If not valid:
+                cout "Invalid input. Enter a unique three digit ID".
+        Cout "What is the name of student i?".
+        Repeat until valid name input is entered:
+            Check if name is valid (length is between 2 and maxNameChars).
+            If not valid:
+                Cout "Invalid input. Enter a name between 2-maxNameChars characters".
+        Cout "What is the score of student i?".
+        Repeat until valid score input is entered:
+            Check if score is valid (between 0 and 100).
+            If not valid:
+                Cout "Invalid input. Enter a score between 0-100".
+        Update students array with the student's ID, name, and score.
+        Update lowestScore and highestScore if applicable.
+        Add score to totalScoresSum.
+    Print all student data to console and studentData file.
+    Print "Average score: totalScoresSum / studentsAmount".
+    Print "Lowest score: lowestScore by student x".
+    Print "Highest score: highestScore by student x".
+    Do-while
+        Cout "Enter a student ID to view their score".
+        Repeat until valid student ID is entered:
+            Check if ID exists in the student array.
+            If ID isnot valid:
+                Cout "Invalid ID input. Try again".
+        Get student index from student array using entered ID.
+        Cout student's name and score.
+        Cout "Do you want to see another student's score? (y/n)".
+    Repeat loop if user enters 'y'.
+    Cout "Do you want to input information for another 5 students? (y/n)".
+Repeat loop if user enters 'y'.
+Close studentData.

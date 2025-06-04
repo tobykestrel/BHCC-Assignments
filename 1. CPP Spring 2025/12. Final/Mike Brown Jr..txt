@@ -1,0 +1,14 @@
+Mike Brown Jr.'s results
+
+	COURSE PART           WEIGHT   GRADE   POINTS EARNED
+
+	Project#1               5%      100          5.0
+	Quiz#1                 10%       90          9.0
+	Project#2               7%       20          1.4
+	Project#3               8%       80          6.4
+	Midterm                25%       78         19.5
+	Final                  35%       58         20.3
+	Particiapation         10%       94          9.4
+
+Course grade is 71.0%
+Mike Brown Jr. PASSED this course

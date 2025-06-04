@@ -1,0 +1,45 @@
+Do-while loop to ensure repeatability:
+    Open student data file.
+    If student data file cannot open:
+        Display error message and exit the program.
+    Skip the header line of the student data file.
+    Initialize arrays for student IDs, quiz scores, midterm scores, final scores.
+    Initialize variables for total scores, highest/lowest final scores and IDs.
+    Display table headers for student data
+    For each student:
+        Read student ID from student data file.
+        If ID is invalid or not unique:
+            Display error and ask for input again.
+        Read Quiz 1 score from student data file.
+        If the score is invalid (not between 0 and 100):
+            Display error and ask for input again.
+        Read Quiz 2 score from student data file.
+        If the score is invalid (not between 0 and 100):
+            Display error and ask for input again.
+        Read Midterm score from student data file.
+        If the score is invalid (not between 0 and 100):
+            Display error and ask for input again.
+        Read final score from student data file.
+        If the score is invalid (not between 0 and 100):
+            Display error and ask for input again.
+        Add scores to student's total.
+        Add scores to tests' totals.
+        Display student's scores.
+    Display averages for each exam (rounded to 1 decimal).
+    Display total and average score for each student.
+    Find highest final score and list of students with that score.
+    Find lowest final score and list of students with that score.
+    Display highest final score and student IDs.
+    Display lowest final score and student IDs.
+
+    Do-while loop for repeatability:
+        Prompt user to input a student ID.
+        If ID not found:
+            Display error and ask again.
+        Else:
+            Display that student's individual scores.
+        Ask if user wants to see another student's score.
+        Repeat loop if user responds 'y'.
+    Close student data file.
+    Ask if user wants to run the entire program again.
+    Repeat loop if user responds 'y'.

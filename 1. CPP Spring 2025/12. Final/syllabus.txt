@@ -1,0 +1,7 @@
+Project#1	5%
+Quiz#1	   10%
+Project#2  7%
+Project#3     8%
+Midterm    25%
+Final       35%
+Particiapation  10%

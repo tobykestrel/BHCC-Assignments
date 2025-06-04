@@ -1,0 +1,19 @@
+Do-while loop to ensure repeatability.
+    Initialize a vector luckyTickets with ten hardcoded five-digit values.
+    Initialize an empty vector winningTickets.
+    Initialize boolean matchFound to false.
+    For loop from 1 to 10:
+        Prompt the user to enter winning number i.
+        While input is invalid (not a number, not five-digits, or a duplicate):
+            Prompt again for a valid number.
+        Add the valid number to winningTickets.
+    Bubble sort luckyTickets and winningTickets.
+    For each number in luckyTickets:
+        For each number in winningTickets:
+            If the lucky number equals a winning number:
+                Display the matching number.
+                Set matchFound to true.
+                Break out of the inner loop to begin checking the next lucky number.
+    If no matches were found (matchFound is false):
+        Print to the console that no matching ticket numbers were found.
+    Ask the user if they want to run the program again (y/n).

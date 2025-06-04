@@ -1,0 +1,41 @@
+// Display a menu with the available operators.
+    ================= Valid Operators =================
+            Addition: +            Subtraction: -  
+      Multiplication: *               Division: /  
+              Modulo: %                                
+    ===================================================
+
+// Initialize Variables.
+    Set operandOne, operandTwo, and solution to an undefined doubles.
+    Set operation to an undefined character.
+
+// Get user input for the operands.
+    Ask the user what the first operand is.
+    Assign input from the user to operandOne.
+    If the input is not a valid number, tell the user and ask for the first operand again.
+    Ask the user what the second operand is.
+    Assign input from the user to operandTwo.
+    If the input is not a valid number, tell the user and ask for the second operand again.
+
+// Get user input for the operation.
+    Ask the user what operation they want to perform.
+    Assign input from the user to operation.
+    If input is not one of the valid operators (+, -, *, /, %), tell the user and ask again.
+    If the operation is division or modulo and the second operand is zero, tell the user and ask again.
+
+// Calculate the solution based on the chosen operation.
+    If operation is addition, then solution = operandOne + operandTwo.
+    If operation is subtraction, then solution = operandOne - operandTwo.
+    If operation is multiplication, then solution = operandOne * operandTwo.
+    If operation is division, then solution = operandOne / operandTwo.
+    If operation is modulo, then solution = operandOne - operandTwo * floor(operandOne / operandTwo).
+
+// Display the solution.
+    ==================== Solution ====================
+        operandOne operation operandTwo = solution
+    ==================================================
+
+// Restart the program if the user wants to calculate again
+    Ask if the user wants to calculate again.
+    If input is not 'y', then close the program. Otherwise, restart the program.
+

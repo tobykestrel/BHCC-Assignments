@@ -1,0 +1,5 @@
+Group_Work	10%
+Research_paper	20%
+Midterm	25%
+Final	35%
+Service_Learning	10%
