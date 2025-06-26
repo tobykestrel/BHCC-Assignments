@@ -63,17 +63,15 @@ int main() {
             << "-" << setw(fieldWidth) << "----------" << setw(fieldWidth) << "----------" << setw(fieldWidth) << "----------" << endl;
 
         // This section calculates the square root of the input number by repeatedly estimating and correcting.
-        n = 1;
+        n = 1; // Setting n to 1 here prevents the estimation couinter from breaking on repetitions of the program.
         do {
             quotient = inputNumber / estimate; // Calculate the quotient.
             difference = fabs(estimate - quotient); // Calculate the difference.
-            cout << setprecision(precision) << n << setw(fieldWidth) << estimate << setw(fieldWidth) << quotient << setw(fieldWidth) << difference << "\n";
+            cout << setprecision(precision) << n << setw(fieldWidth) << estimate << setw(fieldWidth) << quotient << setw(fieldWidth) << difference << "\n"; // Output the intermediate result.
             result = estimate; // Save the current estimate.
             estimate = (result + quotient) / 2; // Calculate another estimate.
             n++; // Increment the number of estimations by one.
         } while (difference >= tolerance);
-
-        // This section is for outputting the results.
         cout << "\nThe square root of " << inputNumber << "\n                is " << result << "\n             (+/-) " << difference;
 
         // This section is for repeating the program if the user wants to.
