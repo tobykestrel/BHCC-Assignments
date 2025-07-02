@@ -1,3 +1,5 @@
+// June 26, 2025 Toby Hansen
+
 // CSC237 Lab 6a: Bitwise Operations:
 // (Starter code provided)
 // This progam implements a "command loop" that invokes different functions, 
