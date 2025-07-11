@@ -1,6 +1,6 @@
 /*
 Toby Hansen, July 10 2025.
-Lab 9 Pointers, CSC-237-200.
+Pointers Lab, CSC-237-200.
 This program uses pointers as function paramters
 for arrays and uses dynamic memory allocation.
 */
@@ -19,7 +19,7 @@ int main() {
 
     // This code banner is printed before the code is run.
     cout<< "Toby Hansen, July 10 2025.\n"
-        << "Lab 9 Pointers, CSC-237-200.\n"
+        << "Pointers Lab, CSC-237-200.\n"
         << "This program uses pointers as function paramters\n"
         << "for arrays and uses dynamic memory allocation.\n\n";
 
