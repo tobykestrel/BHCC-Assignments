@@ -68,7 +68,7 @@ void populateIntegerArray(int *arr, int arraySize) {
 void displayIntegerArray(int *arr, int arraySize) {
 	for (int i = 0; i < arraySize; i++) {
 		cout << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)&arr[i]; 	// Array item pointer.
-		cout << ": arrayPtr[" << setfill(' ') << dec << i << "] = " << setw(10) << arr[i];								// Array index and item (Dec).
+		cout << ": arrayPtr[" << setfill(' ') << dec << i << "] = " << setw(10) << arr[i];				// Array index and item (Dec).
 		cout << "  (Hex " << setw(8) << setfill('0') << hex << uppercase << arr[i] << ")\n"; 			// Array item (Hex)
 	}
 }
