@@ -42,6 +42,7 @@ int main() {
     }
     cin.ignore(10000, '\n');
 	MovieData* arrayPtr = new MovieData[arraySize];
+	cout << "arrayPtr = " << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)arrayPtr << endl;
 
 	// This section populates and displays the movie data array.
 	populateMovieDataArray(arrayPtr, arraySize);

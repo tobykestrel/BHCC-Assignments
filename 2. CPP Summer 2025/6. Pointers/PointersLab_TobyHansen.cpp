@@ -34,7 +34,7 @@ int main() {
 
 	// This section dynamically allocates an int array of the desired size.
 	int* arr = new int[arraySize];
-	cout << "arrayPtr = " << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)&arr << endl;
+	cout << "arrayPtr = " << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)arr << endl;
 
 	// This section calls the functions to populate and display the array, then prints the highest int.
 	populateIntegerArray(arr, arraySize);
@@ -42,7 +42,7 @@ int main() {
 	cout << "Maximum integer in array is: " << dec << findMaximumValue(arr, arraySize) << endl;
 
 	// This section frees the memory allocated for the array.
-	cout << "DELETING array at arrayPtr = " << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)&arr << endl;
+	cout << "DELETING array at arrayPtr = " << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)arr << endl;
 	delete[] arr; 
 
     // Finishes up the program.
