@@ -39,11 +39,11 @@ int main() {
       
       // This section deconstructs the mortgage object and checks the user input on whether to process another loan.
       if (cin.get() != 'y') {
-         cin.ignore(10000, '\n'); 
          delete m;
          break; // Exits the loop, ending the program.
       }
       delete m;
+      cin.ignore(10000, '\n'); 
    }
 
    // Finishes up the program.

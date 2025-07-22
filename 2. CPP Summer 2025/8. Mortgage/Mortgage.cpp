@@ -14,13 +14,13 @@ using namespace std;
 
 // Constructor
 Mortgage::Mortgage() {
-    cout << "INFO: executing constructor for Mortgage class.\n";
+    cout << "INFO: Executing CONSTRUCTOR for Mortgage class.\n";
     setObjVariables();
 }
 
 // Deconstructor
 Mortgage::~Mortgage() {
-    cout << "INFO: executing DESTRUCTOR for Mortgage class (loan amount = " << loanAmount << ").\n";
+    cout << "INFO: Executing DESTRUCTOR for Mortgage class (loan amount = " << loanAmount << ").\n";
 }
 
 // Setter functions
