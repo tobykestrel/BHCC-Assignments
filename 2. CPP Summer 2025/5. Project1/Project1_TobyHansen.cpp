@@ -25,6 +25,7 @@ int main() {
 
 	// This section is a command-loop repeating the program until the user decides to quit.
 	while(true) {
+		cout << "Command: ";
 		switch (cin.get()) {
 			case 'p': pack(); break; // Packs text to data file.
 			case 'u': unpack(); break; // Unpacks packed data to text.
