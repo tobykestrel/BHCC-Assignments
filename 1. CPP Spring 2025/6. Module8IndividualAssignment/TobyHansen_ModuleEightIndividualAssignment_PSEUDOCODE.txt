@@ -1,0 +1,35 @@
+Use a do-while loop to run the program at least once. 
+    Afterwards the conditional will check the user's input to see if it should run again.
+
+Declare all of the variables that are going to be used in the program:
+    Double: averageScore.
+    Integer: highestScore, lowestScore, validScores, invalidScores, totalPoints, currentScore.
+    String fileName.
+    FileStream fileReaderWriter.
+
+Validate the student_scores.txt file with a while loop.
+    If it isn't valid, keep asking the user for a valid file name until it works.
+
+Read every score from the student scores file using a while loop.
+    If the score is invalid (not a number 0-100) then skip it and add 1 to invalidScores. Otherwise:
+        Add the score to the totalPoints counted, and add 1 to the the totalScores counted.
+        If it's higher than the current highestScore, make it the new highestScore.
+        If it's lower than the current lowestScore, make it the new lowestScore.
+
+Close the student scores file.
+
+Validate the summary_report.txt file with a while loop.
+    If it isn't valid, keep asking the user for a valid file name until it works.
+
+Check that there were any valid scores with an if statement (if validScores is greater than zero).
+If there were not any valid scores, a message letting the user know is written to the summary report file. 
+There will also not be any valid scores if the file is empty. If there are valid scores however:
+    Get the averageScore by dividing the totalPoints by the totalScores.
+    Write to the summary report file:
+        The total amount of valid scores (totalScores). 
+        The total amount of invalid scores (invalidScores).
+        The highest score (highestScore). 
+        The lowest score (lowestScore).
+        The average score (averageScore).
+
+Close the summary report file.

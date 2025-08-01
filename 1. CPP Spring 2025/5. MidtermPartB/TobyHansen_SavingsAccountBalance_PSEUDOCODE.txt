@@ -1,0 +1,53 @@
+Declare the variables used throughout the program.
+    Doubles: annualInterestRate, balance, thisMonthsDeposit, thisMonthsWithdraw, thisMonthsInterest.
+    Integer: monthsPassed.
+
+Get input from the user for what the starting balance is for the account.
+    Use a while loop to validate that the input is a number greater than or equal to zero.
+    If the input is invalid, keep asking the user for input until valid input is given.
+
+Get input from the user for what the annual interest is for the account.
+    Use a while loop to validate that the input is a positive number.
+    If the input is invalid, keep asking the user for input until valid input is given.
+
+Get input from the user for how many months have passed since the account was established.
+    Use a while loop to validate that the input is a positive number.
+    If the input is invalid, keep asking the user for input until valid input is given.
+
+Initialize the outfilestream object for writing to the transactions file.
+    Opening the transaction file as an outfile has the benefit of clearing existing text from the file.
+    Use an if statement to validate that the file actually opened. If it didn't open, exit the program.
+    Declare an outfilestream: transactionsFileWrite("TobyHansen_AccountTransactions.txt")
+    Set transactionsFileWrite's precision to two decimal points so that doubles round to the nearest cent.
+
+Use a for loop that for every month that has passed (earlier input from user):
+
+    Get input from the user for how much money was deposited into the account each month.
+        Use a while loop to validate that the input is a number greater than or equal to zero.
+        If the input is invalid, keep asking the user for input until valid input is given.
+    If the valid input is not zero:
+        Add the monthly deposit to the balance.
+        Record the transaction with transactionsFileWrite.
+
+    Get input from the user for how much money was withdrawn from the account each month.
+        Use a while loop to validate that the input is a number greater than or equal to zero.
+        If the input is invalid, keep asking the user for input until valid input is given.
+    If the valid input is not zero:
+        Subtract the monthly withdraw from the balance.
+        Record the transaction with transactionsFileWrite.
+        Check that the balance hasn't gone below zero. If it has, stop the program.
+
+    Calculate the monthly interest (balance multiplied by annualInterestRate divided by twelve).
+    Add the monthly interest to the balance and records the transaction with transactionsFileWrite.
+
+Close transactionsFileWrite. 
+
+Print the total balance.
+
+Initialize the infilestream object for reading from the transactions file.
+    Use an if statement to validate that the file actually opened. If it didn't open, exit the program.
+    Declare an infilestream: transactionsFileRead("TobyHansen_AccountTransactions.txt")
+
+Use a while loop with getLine() in the conditional to go through and print every line in the transactions file.
+
+Close transactionsFileRead.

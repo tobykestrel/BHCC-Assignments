@@ -1,0 +1,63 @@
+// Declare function prototypes for:
+    - calculateRectangleArea() Return double, take two double parameters.
+    - calculateTriangleArea() Return double, take two double parameters.
+    - calculateCircleArea() Return double, take one double parameter.
+    - calculateTrapezoidArea() Return double, take three double parameters.
+
+// Function to calculateRectangleArea(double length, double width):
+    return the product of length times width.
+
+// Function to calculateTriangleArea(double base, double height):
+    return the product of base times height divided by two.
+
+// Function to calculatecircleArea(double radius):
+    return the product of radius times radius times pi.
+
+// Function to calculateTrapezoidArea(double topLength, double bottomLength, double height):
+    return the product of height times the sum of topLength and bottomLength, divided by two.
+
+// Main function:
+    - Print code banner.
+    - Use a do-while loop to ensure repeatability:
+        - Prompt the user to input a character (r, t, c, z).
+        - Validate that the input is one of the four designated characters.
+        - Use a while loop to repeeatedly ask for valid input if the input is invalid.
+        - Use a switch case that checks the input character and performs accordingly:
+            - 'r':
+                - Display blurb explaining what's needed to calculate the area of a rectangle.
+                - Prompt the user to input a length.
+                - Validate that the input is a positive number.
+                - Use a while loop to repeeatedly ask for valid input if the input is invalid.
+                - Prompt the user to input a width.
+                - Validate that the input is a positive number.
+                - Use a while loop to repeeatedly ask for valid input if the input is invalid.
+                - Display that the area of a rectangle with length (length) and width (width) is (call calculateRectangleArea() function).
+            - 't':
+                - Display blurb explaining what's needed to calculate the area of a triangle.
+                - Prompt the user to input a base.
+                - Validate that the input is a positive number.
+                - Use a while loop to repeeatedly ask for valid input if the input is invalid.
+                - Prompt the user to input a height.
+                - Validate that the input is a positive number.
+                - Use a while loop to repeeatedly ask for valid input if the input is invalid.
+                - Display that the area of a triangle with base (base) and height (height) is (call calculateTriangleArea() function).
+            - 'c':
+                - Display blurb explaining what's needed to calculate the area of a circle.
+                - Prompt the user to input a radius.
+                - Validate that the input is a positive number.
+                - Use a while loop to repeeatedly ask for valid input if the input is invalid.
+                - Display that the area of a circle with radius (radius) is (call calculateCircleArea() function).
+            - 'z':
+                - Display blurb explaining what's needed to calculate the area of a trapezoid.
+                - Prompt the user to input a top length.
+                - Validate that the input is a positive number.
+                - Use a while loop to repeeatedly ask for valid input if the input is invalid.
+                - Prompt the user to input a bottom length.
+                - Validate that the input is a positive number.
+                - Use a while loop to repeeatedly ask for valid input if the input is invalid.
+                - Prompt the user to input a height.
+                - Validate that the input is a positive number.
+                - Use a while loop to repeeatedly ask for valid input if the input is invalid.
+                - Display that the area of a triangle with top length (topLength), bottom length (bottomLength), and height (height), is (call calculateTrapezoidArea() function).
+    - Prompt the user to input 'y' to repeat the program and perform another calculation.
+    - If the user's input is anything other than 'y', close the program.

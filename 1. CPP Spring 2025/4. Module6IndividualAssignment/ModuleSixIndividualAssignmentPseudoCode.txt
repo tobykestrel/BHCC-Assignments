@@ -1,0 +1,29 @@
+// Print the code banner before the code is run.
+
+// Declare the variables used throughout the program.
+    integer factorialInt = zero
+    intefer factorialTotal = one
+
+// Get input from the user to decide what number is facorialed.
+(Any input greater than 31 won't work because of int limits).
+    Prompt the user for a positive integer.
+    Assign their input to factorialInt.
+    Remove excess characters in the buffer.
+    Use a while loop that checks if factorialInt is less than one. 
+        If it is, then the input is invalid because non-integers return zero.
+        Tell the user that there their input is invalid.
+        Prompt them to enter a positive integer again.
+        Assign their input to factorialInt.
+        Remove excess characters in the buffer.
+
+// Calculate the factorial and displays the answer.
+    Print their factorial (ex. 5!).
+    Use a while loop that stays true until broken out of.
+        Multiply factorialTotal (which starts at one) by factorialInt.
+        Print factorialInt, and then subtract one.
+        If factorialInt is now zero then the factorial calculation is done.
+            Print and equal sign and the answer.
+            Break out of the while loop.
+        If factorialInt is not now zero, then print a multiplication symbol (*).
+
+// Restart the program if the user wants to calculate another factorial.

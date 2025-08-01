@@ -1,0 +1,6 @@
+Student information is as follows: 
+001 - John       - 75%
+666 - Stan       - 66%
+420 - Hazel      - 99%
+308 - Walter     - 100%
+980 - Margo      - 55%

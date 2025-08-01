@@ -1,0 +1,44 @@
+// Initialize the measurements needed to format the display table.
+    set constant integer EMPLOYEEID_WIDTH to 8
+    set constant integers HOURS_WIDTH and PAYRATE_WIDTH to 10
+    set constant integer TOTALPAY_WIDTH to 14
+    set constant integer TABLE_WIDTH to the total sum of the four widths
+
+// Initialize the amount of employees.
+    Get input from user on how many employees there will be.
+    If the input is not a positive integer, tell the user to input one.
+    Set numberOfEmployees to equal the positive integer entered by the user.
+
+// Initialize an array for each employee's data category.
+    set employeeIDs[] to be an empty array of integers the length of employees there are.
+    set hours[] to be an empty array of integers the length of employees there are.
+    set payRates[] to be an empty array of doubles the length of employees there are.
+    set totalPays[] to be an empty array of doubles the length of employees there are.
+    
+// Initialize the overall totals for hours worked and total pays of each employee.
+    set integer overallTotalHours to 0.
+    set integer overallTotalPay to 0.
+
+// Let the user input data for each employee.
+    For each employee, do the following:
+        // Give the employee an ID number.
+            Assign the employee a random id number between 1000-9999, and store it in employeeIDs[].
+        // Give the employee an amount of hours worked.
+            Get input from the user on how many hours the employee has worked.
+            If the input is not a non-negative integer, tell the user to input one.
+            Set the employee's amount of hours worked in hours[] to equal the non-negative integer entered by the user.
+        // Give the employee an hourly pay rate.
+            Get input from the user on what the employee's pay rate is.
+            If the input is not a non-negative number, tell the user to input one.
+            Set the employee's pay rate in payRates[] to equal the non-negative number entered by the user.
+        // Calculate the total pay and add to the overall total hours and pay.
+            Calculate the total pay by multiplying the employee's hours by their payrate.
+            Set the employee's total pay in totalPays[] to the result of the calculation.
+            Add the employee's total pay to the overall total pay.
+            Add the employee's hours to the overall total hours.
+
+// Display a table with all the gathered and calculated data.
+    Print the headers (Emp ID | Hours | Pay Rate | Total Pay) followed by a horizontal separator line.
+    For each employee, print their employee ID, hours worked, pay rate, and total pay.
+    Print a horizontal seperator line followed by the overall total hours and overall total pay.
+    Print a horizontal seperator line followed by the average pay between all the employees.

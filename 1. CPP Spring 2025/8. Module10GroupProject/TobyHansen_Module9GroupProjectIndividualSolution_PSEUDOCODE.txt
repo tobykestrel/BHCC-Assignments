@@ -1,0 +1,48 @@
+Open file "report.txt" for writing.
+If the file cannot be opened:
+    Display error and exit.
+
+Do-while loop to ensure repeatability after the program's first run.
+    Display menu of math areas of focus.
+    Prompt user to select a focus (1-11).
+    If user selects 11:
+        Display end message and exit program.
+    Prompt user for number of quiz questions (1-100).
+    Initialize string to store question operators.
+    While operator string size < total questions:
+        Randomly pick a question type (0–5).
+        Add corresponding operator to the string if the question type is valid.
+    Initialize total correct answers and partially correct answer counters at 0.
+    For each question from 1 to totalQuestions:
+        Generate two random operands (1–99).
+        Determine the operator type from the operator string.
+        Calculate the correct answer based on the operator.
+        Display question with formatted layout.
+        Prompt the user for their first answer attempt.
+        If the answer is correct:
+            Display congratulatory message.
+            Add 1 to the total correct answers counter.
+        Else:
+            Display apologetic message and prompt for second attempt.
+            If second answer is correct:
+                Display partial credit message.
+                Add 1 to the total partially correct answers counter.
+            Else:
+                Display correct answer.
+    Calculate overall grade using correct and partially correct answers.
+    Display and log results summary to report.txt.
+    Ask the user if they want to take another quiz.
+Close report file.
+
+
+Functions:
+
+void dualPrintOutput(outstream out2, string message) {
+    Output message to both console (cout) and report.txt (out2).
+}
+
+string cleanDouble(double number) {
+    Truncate number to 2 decimal places.
+    Remove unnecessary trailing zeros and decimal point.
+    Return formatted string.
+}

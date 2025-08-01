@@ -1,0 +1,47 @@
+Lucky numbers tested with: 13579, 26791, 26792, 33445, 55555, 62483, 77777, 79422, 85647, 93121
+
+Test 1:
+Enter this week's 10 winning 5-digit numbers.
+Winning Number 1: 11111
+Winning Number 2: 22222
+Winning Number 3: 33333
+Winning Number 4: 44444
+Winning Number 5: 55555
+Winning Number 6: 66666
+Winning Number 7: 77777
+Winning Number 8: 88888
+Winning Number 9: 99999
+Winning Number 10: 00000
+Invalid input. Enter a unique 5-digit number: -11234
+Invalid input. Enter a unique 5-digit number: beans5
+Invalid input. Enter a unique 5-digit number: banana
+Invalid input. Enter a unique 5-digit number: fived
+Invalid input. Enter a unique 5-digit number: 1521.2
+Invalid input. Enter a unique 5-digit number: 11111
+Invalid input. Enter a unique 5-digit number: 22222
+Invalid input. Enter a unique 5-digit number: 33333
+Invalid input. Enter a unique 5-digit number: 44444
+Invalid input. Enter a unique 5-digit number: 55555
+Invalid input. Enter a unique 5-digit number: 12345
+Matching ticket numbers: 55555 77777
+
+
+Test 2:
+Enter this week's 10 winning 5-digit numbers.
+Winning Number 1: -52122
+Invalid input. Enter a unique 5-digit number: 21321
+Winning Number 2: 12350
+Winning Number 3: -2-=1
+Invalid input. Enter a unique 5-digit number: 0i0521js
+Invalid input. Enter a unique 5-digit number: 2123
+Invalid input. Enter a unique 5-digit number: 09218
+Invalid input. Enter a unique 5-digit number: 08202
+Invalid input. Enter a unique 5-digit number: 12345
+Winning Number 4: 92790
+Winning Number 5: 020944
+Winning Number 6: 85932
+Winning Number 7: 39920
+Winning Number 8: 39703
+Winning Number 9: 20293
+Winning Number 10: 22022
+Matching ticket numbers: No matching ticket numbers found.
