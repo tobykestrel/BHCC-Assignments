@@ -117,7 +117,7 @@ void IntList::deleteNode(int num)
 		if (nodePtr) {
 			previousNode->next = nodePtr->next;
 			delete nodePtr;
-		} else { cout << "Data value " << num << " not found."; }
+		} else { cout << "Data value " << num << " not found.\n"; }
 	}
 }
 
@@ -127,19 +127,19 @@ void IntList::deleteNode(int num)
 // pointed to by head.                             *
 //**************************************************
 void IntList::printList() const {
-	cout << " head=" << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)head << endl;
+	cout << " head=" << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)head << dec << endl;
 	
 	// While nodePtr points to a node, traverse the list.
 	ListNode* nodePtr = head;
 	while (nodePtr) {
 		// Display the pointer memory location of the node.
-		cout << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)head;
+		cout << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)head << dec;
 
 		// Display the value of the node.
-		cout << setw(10) << ":  value= " << setw(10) << setfill(' ') << dec << left << nodePtr->value << setw(5) << "next=";
+		cout << setw(10) << ":  value= " << setw(10) << setfill(' ') << left << nodePtr->value << setw(5) << "next=";
 
 		// Display the pointer memory location of the next node.
-		cout << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)head->next << endl;
+		cout << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)head->next << dec << endl;
 
 		// Move to the next node.
 		nodePtr = nodePtr->next;
