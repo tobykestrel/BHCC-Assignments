@@ -133,13 +133,13 @@ void IntList::printList() const {
 	ListNode* nodePtr = head;
 	while (nodePtr) {
 		// Display the pointer memory location of the node.
-		cout << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)head << dec;
+		cout << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)nodePtr << dec;
 
 		// Display the value of the node.
 		cout << setw(10) << ":  value= " << setw(10) << setfill(' ') << left << nodePtr->value << setw(5) << "next=";
 
 		// Display the pointer memory location of the next node.
-		cout << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)head->next << dec << endl;
+		cout << setw(16) << setfill('0') << hex << uppercase << (unsigned long long)(size_t)nodePtr->next << dec << endl;
 
 		// Move to the next node.
 		nodePtr = nodePtr->next;
