@@ -1,4 +1,4 @@
-// Specification file for the PassengerPlane Class
+// Specification file for the PassengerPlane Class (given)
 #ifndef PASSENGER_PLANE_H
 #define PASSENGER_PLANE_H
 #include <iostream>
@@ -7,39 +7,30 @@
 #include "Airplane.h"
 using namespace std;
 
-class PassengerPlane : public Airplane
-{
+class PassengerPlane : public Airplane {
 private:
 	int maxNumberOfPassengers;	// Maximum number of passengers
 
 public:
-	// Default constructor
+	// Constructors
 	PassengerPlane() : Airplane() {
 		maxNumberOfPassengers = 0;
 	}
-
-
-	// Constructor
-	PassengerPlane(string manufacturer, string model, int yearBuilt, 
-		int flightHours, int maxNumberOfPassengers) : 
+	PassengerPlane(string manufacturer, string model, int yearBuilt, int flightHours, int maxNumberOfPassengers) : 
 	    Airplane( manufacturer, model, yearBuilt, flightHours) {
 		this->maxNumberOfPassengers = maxNumberOfPassengers;
 	}
 
-	virtual ~PassengerPlane() {
-		cout << "Destructor for PassengerPlane " << this->getAirplane_ID() << endl;
-	}
+	// Destructor
+	virtual ~PassengerPlane() { cout << "Destructor for PassengerPlane " << this->getAirplane_ID() << endl; }
 
-	// Mutators
+	// Setters
 	void setMaxNumberOfPassengers(int passengers);
 	static PassengerPlane* addNewPassengerPlane();
 
-	// Accessors
+	// Getters
 	int getMaxNumberOfPassengers() const;
-	
 	virtual string getDescription() const;
-
-
 };
 
 #endif

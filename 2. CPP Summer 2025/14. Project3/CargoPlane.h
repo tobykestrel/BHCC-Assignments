@@ -1,15 +1,13 @@
-// Specification file for the CargoPlane Class
+// Specification file for the CargoPlane Class (given)
 #ifndef CARGO_PLANE_H
 #define CARGO_PLANE_H
 #include <iostream>
 #include <iomanip>
 #include <string>
 #include "Airplane.h"
-
 using namespace std;
 
-class CargoPlane : public Airplane
-{
+class CargoPlane : public Airplane {
 private:
 	int maxCargoWeight;		// Maximum weight of cargo
 
@@ -18,27 +16,21 @@ public:
 	CargoPlane() : Airplane() {
 		maxCargoWeight = 0;
 	}
-
-	CargoPlane(string manufacturer, string model, int yearBuilt, 
-		int flightHours, int maxCargoWeight) : 
+	CargoPlane(string manufacturer, string model, int yearBuilt, int flightHours, int maxCargoWeight) : 
 	    Airplane( manufacturer, model, yearBuilt, flightHours) {
 		this->maxCargoWeight = maxCargoWeight;
 	}
 
-	virtual ~CargoPlane() {
-		cout << "Destructor for CargoPlane " << this->getAirplane_ID() << endl;
-	}
+	// Destructor
+	virtual ~CargoPlane() { cout << "Destructor for CargoPlane " << this->getAirplane_ID() << endl; }
 
-	// Mutators
+	// Setters
 	void setMaxCargoWeight(int s);
 	static CargoPlane* addNewCargoPlane();
 
-	// Accessors
+	// Getters
 	int getMaxCargoWeight() const;
-	
 	virtual string getDescription() const;
-	
-
 };
 
 #endif
