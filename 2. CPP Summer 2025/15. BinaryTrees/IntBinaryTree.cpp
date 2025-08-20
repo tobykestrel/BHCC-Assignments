@@ -296,7 +296,12 @@ void IntBinaryTree::enhancedTreeDisplay() const
 void IntBinaryTree::enhancedTreeDisplay(TreeNode *nodePtr, int treeLevel) const
 {
 	// Lab exercise:  add implementation of this function.
-
+	if (nodePtr) {
+		enhancedTreeDisplay(nodePtr->left, treeLevel+1);
+		cout << "( " << treeLevel << ") ";
+		displayNode(nodePtr);
+		enhancedTreeDisplay(nodePtr->right, treeLevel+1);
+	}
 
 }
 
@@ -353,11 +358,17 @@ void IntBinaryTree::displayNumberOfNodes() const
 int IntBinaryTree::calculateSubTreeHeight(TreeNode *nodePtr) const
 {
 	// Lab exercise:   add implementation of this function.
-
 	int subTreeHeight = 0;
+	if (nodePtr) {
+		int leftSubtreeHeight = calculateSubTreeHeight(nodePtr->left);
+		int rightSubtreeHeight = calculateSubTreeHeight(nodePtr->right);
 
-	// Lab exercise:  add implementation of this function.
-
+		if (leftSubtreeHeight > rightSubtreeHeight) {
+			subTreeHeight = leftSubtreeHeight + 1;
+		} else {
+			subTreeHeight = rightSubtreeHeight + 1;
+		}
+	}
 	return subTreeHeight;
 }
 

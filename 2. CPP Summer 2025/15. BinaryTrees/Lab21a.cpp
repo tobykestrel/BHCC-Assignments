@@ -9,205 +9,105 @@
 #include <string>
 #include <cstdlib>
 #include "IntBinaryTree.h"
-
 using namespace std;
 
-
 //  Function Prototypes:
-
 void outputHelpMessage();
 void quitProgram(int exitStatus);
 
-
-
-int main()
-{
-	// Local variables for 'main' function:	
-	string command;			//	command string, input by user
-
+int main() {
 	IntBinaryTree *testTreePtr = nullptr;
 	string inputText;
 
-	while (true)
-	{
-
-		// Prompt for command input.
+	string command;
+	while (true) {
 		cout << "\nCommand: ";
 		getline(cin, command);
-
-		cout << fixed << setprecision(2);
-
-		if (command == "")
-		{
-			// ignore empty command
-		}
-		else if (command == "C" || command == "clobber")
-		{
-			if (testTreePtr)
-			{
+		cout << fixed << setprecision(2) << left;
+		if (command == "") { } // ignore empty command
+		else if (command == "C" || command == "clobber") {
+			if (testTreePtr) {
 				cout << "root=" << testTreePtr->getRoot() << " (before clobber operation)" << endl;
 				testTreePtr->userRemoveAllNodes();
 				cout << "root=" << testTreePtr->getRoot() << " (after clobber operation)" << endl;
-			}
-			else
-			{
+			} else {
 				cout << "Run \"r\" command first." << endl;
 			}
-
-		}
-		else if (command == "d" || command == "inorder")
-		{
+		} else if (command == "d" || command == "inorder") {
 			if (testTreePtr) {
 				cout << "     INorder traversal: " << endl;
 				cout << "root=" << testTreePtr->getRoot() << endl;
 				testTreePtr->displayInOrder();
-			}
-			else
-			{
+			} else {
 				cout << "Run \"r\" command first." << endl;
 			}
-		}
-		else if (command == "D")
-		{
-			if (testTreePtr)
-			{
+		} else if (command == "D") {
+			if (testTreePtr) {
 				cout << "root=" << testTreePtr->getRoot() << endl;
 				testTreePtr->enhancedTreeDisplay();
-			}
-			else
-			{
+			} else {
 				cout << "Run \"r\" command first." << endl;
 			}
-		}
-		else if (command == "h" || command == "help")
-		{
-			// Output help text
+		} else if (command == "h" || command == "help") {
 			outputHelpMessage();
-		}
-		else if (command == "H" || command == "height")
-		{
+		} else if (command == "H" || command == "height") {
+			if (testTreePtr) { testTreePtr->displayTreeHeight(); } 
+			else { cout << "Run \"r\" command first." << endl; }
+		} else if (command == "i" || command == "I") {
+			if (testTreePtr) { testTreePtr->userInsertNode(); } 
+			else { cout << "Run \"r\" command first." << endl; }
+		} else if (command == "n" || command == "N") {
+			if (testTreePtr) { testTreePtr->displayNumberOfNodes(); }
+			else { cout << "Run \"r\" command first." << endl; }
+		} else if (command == "pre" || command == "preorder") {
 			if (testTreePtr) {
-
-				testTreePtr->displayTreeHeight();
-			}
-			else
-			{
-				cout << "Run \"r\" command first." << endl;
-			}
-		}
-		else if (command == "i" || command == "I")
-		{
-			if (testTreePtr)
-			{
-				testTreePtr->userInsertNode();
-			}
-			else
-			{
-				cout << "Run \"r\" command first." << endl;
-			}
-		}
-		else if (command == "n" || command == "N")
-		{
-			if (testTreePtr)
-			{
-				testTreePtr->displayNumberOfNodes();
-			}
-			else
-			{
-				cout << "Run \"r\" command first." << endl;
-			}
-		}
-		else if (command == "pre" || command == "preorder")
-		{
-			if (testTreePtr)
-			{
 				cout << "     PREorder traversal: " << endl;
 				cout << "root=" << testTreePtr->getRoot()
 					<< endl;
 				testTreePtr->displayPreOrder();
-			}
-			else
-			{
+			} else {
 				cout << "Run \"r\" command first." << endl;
 			}
-		}
-		else if (command == "post" || command == "postorder")
-		{
-			if (testTreePtr)
-			{
+		} else if (command == "post" || command == "postorder") {
+			if (testTreePtr) {
 				cout << "     POSTorder traversal: " << endl;
 				cout << "root=" << testTreePtr->getRoot()
 					<< endl;
 				testTreePtr->displayPostOrder();
-			}
-			else
-			{
+			} else {
 				cout << "Run \"r\" command first." << endl;
 			}
-		}
-		else if (command == "q" || command == "quit")
-		{
-			// Quit program
-			quitProgram(0);  // exit status = SUCCESS 
-		}
-		else if (command == "r")
+		} else if (command == "q" || command == "quit") {
+			quitProgram(0);  // Quit program, exit status = SUCCESS 
+		} else if (command == "r") {
 			// If there is a binary tree object defined, delete it;
-		{
-			if (testTreePtr) {
-				delete testTreePtr;
-			}
+			if (testTreePtr) { delete testTreePtr; }
 
 			testTreePtr = new IntBinaryTree();
-			if (testTreePtr->openInputFile() == true)
-			{
+			if (testTreePtr->openInputFile() == true) {
 				int lineCount;
 				lineCount = testTreePtr->readFile();
 				cout << lineCount << " lines read from input file." << endl;
 				testTreePtr->closeInputFile();
 			}
-		}
-		else if (command == "R")
-		{
-			if (testTreePtr)
-			{
-				testTreePtr->userRemoveNode();
-			}
-			else
-			{
-				cout << "Run \"r\" command first." << endl;
-			}
-		}
-		else if (command == "s")
-		{
-			if (testTreePtr)
-			{
-				testTreePtr->userSearchNode();
-			}
-			else
-			{
-				cout << "Run \"r\" command first." << endl;
-			}
-		}
-		else if (command == "v" || command == "verbose")
-		{
-			if (IntBinaryTree::getVerboseMode() == true)
-			{
+		} else if (command == "R") {
+			if (testTreePtr) { testTreePtr->userRemoveNode(); }
+			else { cout << "Run \"r\" command first." << endl; }
+		} else if (command == "s") {
+			if (testTreePtr) { testTreePtr->userSearchNode(); }
+			else { cout << "Run \"r\" command first." << endl; }
+		} else if (command == "v" || command == "verbose") {
+			if (IntBinaryTree::getVerboseMode() == true) {
 				cout << "Clearing verboseMode." << endl;
 				IntBinaryTree::setVerboseMode(false);
-			}
-			else
-			{
+			} else {
 				cout << "Setting verboseMode." << endl;
 				IntBinaryTree::setVerboseMode(true);
 			}
-		}
-		else
-			cout << "Invalid command:  " << command << endl;
-
-	}  // (end 'while')
-
+		} else { cout << "Invalid command:  " << command << endl; }
+	} 
 	return 0;
-}  // (end function 'main')
+}
 
 /*=============================================================================
 *	Function:	outputHelpMessage - Output short description of commands.
@@ -220,12 +120,9 @@ int main()
 *  Desciption:
 *		Output (to the screen) a short description of each interactive command
 *      supported by the program.
-*
 *---------------------------------------------------------------------------*/
-void outputHelpMessage()
-{
-	// Help text.
-	cout << "Supported commands: \n"
+void outputHelpMessage() {
+	cout<< "Supported commands: \n"
 		<< "	C       Remove ALL nodes from binary tree (clobber)\n"
 		<< "	d       display binary tree by INorder traversal.\n"
 		<< "	D       Enhanced display of binary tree (lab exercise).\n"
@@ -239,10 +136,8 @@ void outputHelpMessage()
 		<< "	r       open input file, read into binary tree.\n"
 		<< "	R       Remove node from binary tree\n"
 		<< "	s       Search for node in binary tree\n"
-		<< "	v       Set or Clear VERBOSE mode\n"
-		<< endl;
-
-} // (end function 'outputHelpMessage')
+		<< "	v       Set or Clear VERBOSE mode\n" << endl;
+}
 
 /*=============================================================================
 *	Function:	quitProgram  -	 Exit the program, returning status from caller
@@ -253,16 +148,10 @@ void outputHelpMessage()
 *  Outputs:
 *      exits the program, passing status value from caller
 *
-*
 *  Desciption:
 *		Exit the program
-*
 *---------------------------------------------------------------------------*/
-void quitProgram(int exitStatus)
-{
+void quitProgram(int exitStatus) {
 	cout << "Exiting program with status = " << exitStatus << endl;
 	exit(exitStatus);
-
-} // (end function 'quitProgram')
-
-
+}
