@@ -1,0 +1,42 @@
+Toby Hansen
+September 8, 2025
+
+<==Instructions==>
+Using the file I have attached, go to the last method that uses the InsertAt 
+method and after running this program, find the logic error in the program.
+
+<=====Answer=====>
+The difference between the version that works correctly and the version with an error, 
+is that the version with an error has the order of the final if-else statements swapped:
+
+Correct:
+    if (i==n) {
+		last->link = (LISTREC*)malloc(sizeof(LISTREC));
+		last->link->info=newentry;
+		last->link->link = next;
+		printf("\n Created node at %d",i);	
+	} else if (next->link == NULL) {
+		next->link = (LISTREC*)malloc(sizeof(LISTREC));
+		next->link->info=newentry;
+		next->link->link = NULL;
+		++i;
+		printf("\n Created node at %d",i);	
+	}
+
+Error:
+    if (next->link == NULL) {
+		next->link = (LISTREC*)malloc(sizeof(LISTREC));
+		next->link->info=newentry;
+		next->link->link = NULL;
+		++i;
+		printf("\n Created node at %d",i);	
+	} else if  (i==n) {
+		last->link = (LISTREC*)malloc(sizeof(LISTREC));
+		last->link->info=newentry;
+		last->link->link = next;
+		printf("\n Created node at %d",i);	
+	}
+
+This is causing a logic error in the program because if the position n specified happens to be the index of the last entry with link=NULL,
+then instead of inserting it properly into the position and linking the last entry after it, the program will append the new entry to be
+at the end of this list after the last entry, which is incorrectly off by one index.
