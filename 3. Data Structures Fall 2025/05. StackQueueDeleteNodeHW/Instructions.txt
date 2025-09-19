@@ -1,0 +1,1 @@
+Using a stack or queue write the data structure to delete any node from the stack or queue.

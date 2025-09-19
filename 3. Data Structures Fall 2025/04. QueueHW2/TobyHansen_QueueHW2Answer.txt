@@ -1,0 +1,14 @@
+Toby Hansen
+September 18, 2025
+
+Instructions:
+Look at the attached file. Go to line 216 and explain in 
+English how the Data Structure for the listdelete works.
+
+Answer:
+The data structure for this function is a singly linked list. All the nodes in the list store one piece of data and one pointer to the next node.
+There is also a special pointer called top which always points to the first/head node in the list. If top==null, the list is empty.
+The function works with the singly linked list by deleting a node in the queue that matches the given data with the following logic:
+1. If the list is empty, delete nothing and let the user know.
+2. If a node with matching data to that given is discovered, it is removed from the queue.
+3. If a node with matching data to that given could not be discovered, delete nothing and let the user know.
