@@ -38,7 +38,7 @@ public class TrianglePrinting {
 		}
 	}
 	
-	// This function takes input from the user for formula variables and outputs the solution.
+	// This function takes an int input from the user and uses conditional logic to perform unique outputs.
 	static public void doSimpleMath() {
 		System.out.println("The Formula is ((x*15)-3+22)/4");
 		System.out.print("Enter x: ");
@@ -56,7 +56,7 @@ public class TrianglePrinting {
 		}
 	}
 	
-	// This function takes fahrenheit input from the user and outputs the temperature in celsius.
+	// This function uses for loops to print a right triangle of asterisks.
 	static public void printRightTriangle() {
 		for (int i = 0; i < 6; i++) {
 			for (int j = 0; j < (i*2)+1; j++) { System.out.print('*'); }
@@ -64,7 +64,7 @@ public class TrianglePrinting {
 		}
 	}
 
-	// This function takes celsius input from the user and outputs the temperature in fahrenheit.
+	// This function uses for loops to print an equilateral triangle of asterisks.
 	static public void printEquilateralTriangle() {
 		for (int asterisks = 1, spaces = 3; asterisks <= 7; asterisks+=2, spaces--) {
 			for (int i = spaces; i > 0; i--) { System.out.print(' '); }
