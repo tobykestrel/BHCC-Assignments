@@ -1,0 +1,35 @@
+
+TASK 1:
+
+Take an integer variable x.
+Assign value 12 to it.
+
+Multiply value to 15.
+Then Subtract 3.
+Add 22.
+Divide by 4.
+
+
+PRINT: If Quotient value is greater than 5, print "I am the King", else print "I lost".
+
+PRINT: If remainder value is above 2, add 10 into it and print it on the screen.
+
+
+
+
+TASK 2:
+
+Print the following visual using loops
+
+*
+***
+*****
+*******
+*********
+***********
+
+
+    *
+   ***
+  *****
+ *******
