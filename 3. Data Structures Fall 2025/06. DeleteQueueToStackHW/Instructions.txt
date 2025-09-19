@@ -1,0 +1,1 @@
+Using the code I gave you take the delete function out of the queue and add it to the stack.c program.
