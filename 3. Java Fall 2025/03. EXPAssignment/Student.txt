@@ -1,0 +1,16 @@
+Assignment:
+Below is the students data. It contains name of the students and their nationality information.
+
+1. Create a Student POJO Class, with two instance variables, name and citizenship.
+2. Create Student instances using Constructor with fields.
+3. Get list of all student names and store them in a String array. Name cannot be null. In such case catch a Null Pointer Exception.
+2. Print all Names. [i.e., Adam, John, James]
+3. Write a method that takes array index value as an input parameter and prints the name value. Catch ArrayIndexOutOfBounds Exception.
+
+
+Name,Citizenship
+Adam,United Kingdom
+John,Germany
+null,Italy
+James,Spain
+null,Germany
