@@ -1,0 +1,43 @@
+Q- Design a Car Builder Project (class CarBuilder).
+
+ - Write a "Car" POJO class which store the details about a car. (see table below)
+
+ - Store the cars information in an ArrayList.
+ - Print list of the cars in natural order.
+ - Sort the list based on the price of each car. Print the list again.  #toString()
+
+
+ - Write a "ItemPriceMap" Map to store the price of each item.
+ 	Key - name of the item
+ 	Value - price of the item
+
+
+Each Item Information is as below:
+
+Wheel:
+	Wheel-X, ($90) each
+	S-Steel ($130) each
+
+CarBody:
+	SUV-Shape ($10000)
+	Sedan-Sport ($15000)
+	Sedan-Coupe ($13000)
+
+Engine:
+	Turbo ($15000)
+	TurboSwift ($19000)
+
+
+- In main method of class "CarBuilderDemo", print Cost and list of Items for the following three cars.
+
+
+VIN,	Name, 	Model, 		Color, 		Engine, 		Wheels(4),	Body			
+KTN123,	Tesla, 	Model S, 	Red, 		Turbo, 			S-Steel,	Sedan-Sport
+XRE441,	GM,	Imapla,		White,		TurboSwift,		Wheel-X,	Sedan-Coupe
+WWR839,	Nissan,	Rouge,		Gray,		Turbo,			S-Steel,	SUV-Shape    
+  
+
+
+
+
+
