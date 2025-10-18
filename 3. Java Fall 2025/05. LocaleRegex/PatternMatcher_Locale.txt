@@ -1,0 +1,56 @@
+Question 1:
+
+Take today's date as an input.
+Print today's date for the following geographical locations.
+
+1. China, Chinese
+2. Egypt, Arabic
+3. Germany, German
+4. India, English
+5. Canada, English
+6. Japan, Japanese
+
+
+
+Question 2:
+
+You are tasked with creating a program that validates whether a given email address is valid. The program should check the email address against a standard format that consists of:
+
+1. A local part (before the '@') which can contain alphanumeric characters, periods, and underscores.
+
+2. The '@' symbol separating the local part and the domain.
+
+3. A domain part (after the '@') which must contain alphanumeric characters and at least one period.
+
+4. A top-level domain (TLD) which is at least two characters long, consisting of only alphabetic characters (e.g., .com, .org, .net).
+
+
+
+Example:
+
+Enter your email address: test.user@example.com
+The email address is valid.
+
+Enter your email address: invalid-email@com
+The email address is invalid.
+
+Enter your email address: another_test@domain.org
+The email address is valid.
+
+
+Enter your email address: user@.com
+The email address is invalid.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
