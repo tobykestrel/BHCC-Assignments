@@ -1,0 +1,1 @@
+Write the data structure for creating a binary tree.
