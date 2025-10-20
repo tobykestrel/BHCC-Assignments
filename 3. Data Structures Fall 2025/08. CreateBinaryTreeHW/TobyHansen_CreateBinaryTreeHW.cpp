@@ -1,9 +1,9 @@
-/*======================================
-| Toby Hansen, October 19 2025.        |
-| DeleteFromBinaryTreeHW, CSC-242.     |
-| This program is able to delete nodes |
-| from a binary tree data structure.   |
-======================================*/
+/*===================================
+| Toby Hansen, October 19 2025.     |
+| CreateBinaryTreeHW, CSC-242.      |
+| This program is able to add nodes |
+| to a binary tree data structure.  |
+===================================*/
 
 #include <iostream>
 using namespace std;
