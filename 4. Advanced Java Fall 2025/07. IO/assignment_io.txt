@@ -1,0 +1,8 @@
+Read Student_Data.csv file and answer following questions.
+
+1. How many rows contain value "Columbia" in a University Column (Column 4).
+2. How many rows contain value "Michigan" in a State Column (Column 2).
+3. How many unique states are mentioned in this file.
+4. How many unique rows exists in this file.
+5. Who lives at "12 State Street"?
+
