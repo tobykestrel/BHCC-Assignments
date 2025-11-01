@@ -1,0 +1,31 @@
+
+Date: Nov 01 2025
+
+Test #2:
+
+Time Allowed: 1 Hr  (9:15AM - 10:15AM)
+
+Input File: StudentData.csv
+
+1. Reading data from given CSV file using Java I/O.
+	- Read file using BufferedReader Stream.
+
+2. Storing and managing data in Java POJO objects.
+	- Create a Student class with the following fields:
+	- Provide a constructor to initialize all fields.
+	- Add getter and setter methods.
+	- Override toString() for clean output.
+	- Override equals() and hashCode() so that duplicate students (same id and name) are treated as identical.
+
+3. Using Collections (ArrayList / Set) effectively.
+
+4. Performing data analysis and answer following questions.
+
+	- Display the total number of records read and how many unique students there are.
+	- List all students enrolled in the “Java” course.
+	- Calculate and display the average score for all students in the Java course.
+	- Find and display the student(s) with the highest score overall.
+	- Count how many students are enrolled in each course. ( Using HashMap <String,Integer> )
+
+5. Make sure all exceptions are caught using Try/Catch block(s) and useful messages are displayed in case of exception caught.
+
