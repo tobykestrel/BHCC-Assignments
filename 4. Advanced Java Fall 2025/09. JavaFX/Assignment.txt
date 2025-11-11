@@ -1,0 +1,22 @@
+Create a user interface to collect information about Passengers.
+
+Information to enter:
+
+1. Name
+2. Age
+3. Sex (Male, Female)
+4. Flying From (City) | Option 1: Combo Box (Drop Down) -- with 5 filled in Cities
+5. Flying to (City) | | Option 1: Combo Box (Drop Down) -- with 5 filled in Cities
+6. Date of Departure (Option 1: Date Picker) / Option 2: TextField with specific format (YYYY-MM-DD)
+7. Ticket Price (Only Double Values)
+
+
+Buttons like:   Clear, Close, Save
+
+Clear: Clear the data from UI
+Save: Save the data in a CSV File (APPEND A ROW) /// Available in RESOURCES folder
+
+
+
+
+
