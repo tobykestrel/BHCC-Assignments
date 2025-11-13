@@ -1,0 +1,33 @@
+Instructions:
+EXTRA CREDIT Using the Files for Packages add 1 Field to the Emprec.java & 1 new method to the Emprec.java then run them with Emp_Ex.java show how they work!!!
+
+
+Hi,
+I have had a few questions on how to run the packages example.
+This will make it simple.
+
+download the 2 attached files (Emprec.java   and  Emp_Ex.java)  to a directory that you create called
+c:\packages
+
+Now change to that directory      (   cd \packages  should do the trick)
+
+Next set that path to your compiler
+path = "c:\program files\java\jdk1.6.0_23\bin"  (NOTE:You WILL have a newer compiler !!!!) 
+// SHOW HOW TO SET THE PATH!!!!!!
+
+now type
+javac   -d     c:\packages     Emprec.java
+
+what just happened is that you created Emprec.class but it was placed in the
+c:\packages\com\jhaley\pk1   directory.  THIS DIRECTORY WAS MADE BY JAVA  NOT BY YOU THE PROGRAMMER. 
+THE ONLY DIRECTORY THAT YOU MADE WAS THE c:\packages DIRECTORY TO PLACE THE 2 .JAVA FILES IN.  JAVA DID THE REST.
+
+TO TEST THE PACKAGE TYPE
+javac Emp_Ex.java
+java Emp_Ex
+
+Now you will see the output.
+This is the simple way to do packages.  Please note all the times the keywork  "public"  is used.
+
+Good luck,
+Jack

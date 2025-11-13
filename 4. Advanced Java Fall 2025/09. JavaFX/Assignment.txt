@@ -15,8 +15,3 @@ Buttons like:   Clear, Close, Save
 
 Clear: Clear the data from UI
 Save: Save the data in a CSV File (APPEND A ROW) /// Available in RESOURCES folder
-
-
-
-
-

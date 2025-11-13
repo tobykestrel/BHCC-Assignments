@@ -1,0 +1,33 @@
+Toby Hansen Week 11 DFS Assignment
+
+Tree (and array indexes):
+
+   |-Z1-W5
+   |
+   |-T2-B6
+X0-|
+   |-M3
+   |
+   |-P4-L7-K8
+
+Output:
+XZWTBMPLK
+
+Stack History:
+X
+XZ
+XZW
+XZ
+X
+XT
+XTB
+XT
+X
+XM
+X
+XP
+XPL
+XPLK
+XPL
+XP
+X

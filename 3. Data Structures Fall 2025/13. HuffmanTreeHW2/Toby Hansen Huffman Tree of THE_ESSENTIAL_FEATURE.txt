@@ -1,0 +1,54 @@
+Toby Hansen Nov 12, 2025
+Huffman tree of "THE ESSENTIAL FEATURE"
+
+Step 1: Organize Characters by frequency.
+'E' 5
+'T' 3
+'A' 2
+' ' 2
+'S' 2
+'H' 1
+'N' 1
+'I' 1
+'L' 1
+'F' 1
+'U' 1
+'R' 1
+
+Step 2: Combine the two lowest frequency chars until only one tree remains.
+'R'(1) + 'U'(1) [2] 'RU'
+'F'(1) + 'L'(1) [2] 'FL'
+'I'(1) + 'N'(1) [2] 'IN'
+'H'(1) + 'S'(2) [3] 'HS'
+' '(2) + 'A'(2) [4] ' A'
+'RU'(2) + 'FL'(2) [4] 'RUFL'
+'IN'(2) + 'T'(3) [5] 'INT'
+'HS'(3) + ' A'(4) [7] 'HS A'
+'RUFL'(4) + 'E'(5) [9] 'RUFLE'
+'INT'(5) + 'HS A'(7) [12] 'INTHS A'
+'RUFLE'(9) + 'INTHS A'(12) [21] 'RUFLEINTHS A'
+
+Step 3: Build Huffman Tree.
+
+                |-1[R]
+            |-2-|
+            |   |-1[U]
+        |-4-|
+        |   |   |-1[F]
+   |-09-|   |-2-|
+   |    |       |-1[L]
+   |    |-5[E]
+   |            |-1[I]
+   |        |-2-|
+21-|        |   |-1[N] 
+   |    |-5-|
+   |    |   |
+   |    |   |-3[T]
+   |    |
+   |-12-|       |-1[H]
+        |   |-3-|
+        |   |   |-2[S]
+        |-7-|
+            |   |-2[ ]
+            |-4-|
+                |-2[A]
