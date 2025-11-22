@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="application.FormController">
+
+    <top>
+        <Label text="Welcome to File Editor"
+               style="-fx-font-size: 20px; -fx-padding: 15px; -fx-alignment: center;"
+               maxWidth="Infinity"/>
+    </top>
+
+    <center>
+        <VBox spacing="15">
+		    <padding>
+		        <Insets top="20" right="20" bottom="20" left="20"/>
+		    </padding>
+
+            <HBox spacing="10">
+                <Label text="File Path:" style="-fx-font-size: 14px;" />
+                <TextField fx:id="filePathField" prefWidth="600" />
+                <Button fx:id="selectFileButton" text="Select File" onAction="#selectFile" />
+            </HBox>
+
+            <TextArea fx:id="textArea" prefHeight="350" />
+
+            <Button fx:id="saveButton"
+                    text="Save"
+                    onAction="#saveFile"
+                    style="-fx-background-color: green; -fx-text-fill: white; -fx-font-size: 16px;"
+                    maxWidth="120" />
+        </VBox>
+    </center>
+</BorderPane>
