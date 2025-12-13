@@ -1,0 +1,4 @@
+1. Given an unordered integer array, the task is to convert it to an ordered array. (Hint: Nested loops)
+
+
+2. Given a Binary Tree of size N, You have to count leaves in it.

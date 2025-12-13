@@ -1,0 +1,32 @@
+Toby Hansen BFS DFS Modification
+Data Structures November 24, 2025
+
+Tree and outputs originally:
+   |-L1-|-A5-|-M7
+   |
+   |-P2-|-Q6-|-R8
+X0-|
+   |-K3
+   |
+   |-B4
+DFS: XLAMPQRKB
+BFS: XLPKBAQMR
+
+Tree and outputs when K3 becomes a child of R8:
+   |-L1-|-A5-|-M7
+   |
+   |-P2-|-Q6-|-R8-|-K3
+X0-|
+   |-B4
+DFS: XLAMPQRKB (no change)
+BFS: XLPBAQMRK
+
+
+Tree and outputs when B4 becomes a child of R8:
+   |-L1-|-A5-|-M7
+   |
+   |-P2-|-Q6-|-R8-|-B4
+X0-|
+   |-K3
+DFS: XLAMPQRBK
+BFS: XLPKAQMRB
