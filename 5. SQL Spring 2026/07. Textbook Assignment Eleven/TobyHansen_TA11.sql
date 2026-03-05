@@ -2,7 +2,7 @@
 Toby Hansen
 March 4, 2026
 SQL Programming
-Chapter Ten Textbook Assignment
+Chapter Eleven Textbook Assignment
 */
 
 /*Q1 How many books are there in the Computer category? Use column alias for a column 
