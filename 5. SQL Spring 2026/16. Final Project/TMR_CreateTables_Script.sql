@@ -69,11 +69,14 @@ create table RENTALS (
     CustomerId number(8) not null,
     RentalDate date not null,
     ReturnDate date,
+    RefundGiven number(4,2),
     constraint RENTALS_RentalId_PK 
         primary key (RentalId),
     constraint RENTALS_CustomerId_FK 
         foreign key (CustomerId) 
-        references CUSTOMERS(CustomerId)
+        references CUSTOMERS(CustomerId),
+    constraint RENTALS_RefundGiven_CK
+        check (RefundGiven >= 0)
 );
 
 create table RENTALMOVIES (
