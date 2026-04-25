@@ -42,7 +42,8 @@ insert into RENTALS values (4, 2, to_date('2026-02-01','YYYY-MM-DD'), to_date('2
 insert into RENTALS values (5, 5, to_date('2026-02-06','YYYY-MM-DD'), to_date('2026-02-19','YYYY-MM-DD'), 21.98);
 insert into RENTALS values (6, 3, to_date('2026-02-07','YYYY-MM-DD'), to_date('2026-02-20','YYYY-MM-DD'), 9.99);
 insert into RENTALS values (7, 2, to_date('2026-03-29','YYYY-MM-DD'), to_date('2026-04-10','YYYY-MM-DD'), 10.99);
-insert into RENTALS values (8, 5, to_date('2026-04-21','YYYY-MM-DD'), null, null);
+insert into RENTALS values (8, 1, to_date('2026-04-01','YYYY-MM-DD'), to_date('2026-04-15','YYYY-MM-DD'), 19.98);
+insert into RENTALS values (9, 5, to_date('2026-04-21','YYYY-MM-DD'), null, null);
 
 insert into RENTALMOVIES values (1, 'tt0816692', 1);
 insert into RENTALMOVIES values (1, 'tt0068646', 1);
@@ -56,4 +57,6 @@ insert into RENTALMOVIES values (5, 'tt1517268', 1);
 insert into RENTALMOVIES values (5, 'tt15398776', 1);
 insert into RENTALMOVIES values (6, 'tt0816692', 1);
 insert into RENTALMOVIES values (7, 'tt12042730', 1);
-insert into RENTALMOVIES values (8, 'tt12042730', 1);
+insert into RENTALMOVIES values (8, 'tt0816692', 1);
+insert into RENTALMOVIES values (8, 'tt1375666', 1);
+insert into RENTALMOVIES values (9, 'tt12042730', 1);
