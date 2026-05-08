@@ -60,3 +60,17 @@ insert into RENTALMOVIES values (7, 'tt12042730', 1);
 insert into RENTALMOVIES values (8, 'tt0816692', 1);
 insert into RENTALMOVIES values (8, 'tt1375666', 1);
 insert into RENTALMOVIES values (9, 'tt12042730', 1);
+
+insert into PAYMENTCARDS values (1, 1234123412341234);
+insert into PAYMENTCARDS values (2, 8765432187654321);
+insert into PAYMENTCARDS values (3, 1615141312111009);
+insert into PAYMENTCARDS values (4, 0102030405060708);
+insert into PAYMENTCARDS values (5, 1616161616161616);
+insert into PAYMENTCARDS values (6, 0112248322568192);
+
+insert into CUSTOMERSPAYMENTCARDS values (1, 1);
+insert into CUSTOMERSPAYMENTCARDS values (2, 2);
+insert into CUSTOMERSPAYMENTCARDS values (3, 3);
+insert into CUSTOMERSPAYMENTCARDS values (4, 4);
+insert into CUSTOMERSPAYMENTCARDS values (5, 5);
+insert into CUSTOMERSPAYMENTCARDS values (5, 6);

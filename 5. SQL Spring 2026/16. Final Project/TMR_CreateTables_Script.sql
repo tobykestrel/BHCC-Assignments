@@ -5,6 +5,8 @@ SQL Programming Final Project
 TMR Create Tables Script
 */
 
+drop table if exists CUSTOMERSPAYMENTCARDS cascade constraints;  
+drop table if exists PAYMENTCARDS cascade constraints;  
 drop table if exists RENTALMOVIES cascade constraints;  
 drop table if exists RENTALS cascade constraints; 
 drop table if exists CUSTOMERS cascade constraints; 
@@ -93,4 +95,26 @@ create table RENTALMOVIES (
         references MOVIES(ImdbId),
     constraint RENTALMOVIES_Quantity_CK
         check (Quantity > 0)
+);
+
+create table PAYMENTCARDS (
+    PaymentCardId number(8) not null,
+    CardNumber number(32) not null,
+    constraint PAYMENTCARDS_PaymentCardId_PK
+        primary key (PaymentCardId),
+    constraint PAYMENTCARDS_CardNumber_UK
+        unique (CardNumber)
+);
+
+create table CUSTOMERSPAYMENTCARDS (
+    CustomerId number(8) not null,
+    PaymentCardId number(8) not null,
+    constraint CUSTOMERSPAYMENTCARDS_PK
+        primary key (CustomerId, PaymentCardId),
+    constraint CUSTOMERSPAYMENTCARDS_CustomerId_FK
+        foreign key (CustomerId)
+        references CUSTOMERS(CustomerId),
+    constraint CUSTOMERSPAYMENTCARDS_PaymentCardId_FK
+        foreign key (PaymentCardId)
+        references PAYMENTCARDS(PaymentCardId)
 );
